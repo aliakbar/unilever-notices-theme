@@ -1,1 +1,42 @@
-.cmp-container {}
+.cmp-container {
+}
+.container:not(.root) .container {
+  padding: 20px;
+  @media only screen and (min-width: 768px) {
+    padding: 0;
+    margin: 40px 0;
+  }
+  & > .cmp-container {
+    box-shadow: 0 0 12px 0 #e6e3e6;
+    height: 100%;
+    overflow: auto;
+    display: block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    @media only screen and (min-width: 768px) {
+      padding: 30px;
+    }
+    @media only screen and (min-width: 1140px) {
+      width: 1140px;
+    }
+  }
+  &:before {
+    content: "";
+    background: url("../resources/images/unilever-logo.png") no-repeat center;
+    background-size: contain;
+    position: relative;
+    display: inline-block;
+    top: -17px;
+    width: 50px;
+    height: 52px;
+    padding: 0 20px;
+    @media only screen and (min-width: 768px) {
+      top: -47px;
+      width: 100px;
+      height: 104px;
+      padding: 0 30px;
+      margin-left: 50px;
+    }
+  }
+}

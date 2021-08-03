@@ -1,6 +1,22 @@
-.cmp-navigation {}
-.cmp-navigation__group {}
-.cmp-navigation__item {}
-.cmp-navigation__item--active {}
+.cmp-navigation {
+  font-size: 14.4px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    @media only screen and (min-width: 768px) {
+      column-count: 3;
+    }
+  }
+}
+.cmp-navigation__group {
+}
+.cmp-navigation__item {
+}
+.cmp-navigation__item--active {
+}
 // .cmp-navigation__item--level-0 {}
-.cmp-navigation__item-link {}
+.cmp-navigation__item-link {
+}

@@ -1,7 +1,8 @@
 //== Font
 
-$font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-title: 'Source Serif Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family: Arial, Helvetica, sans-serif;
+$font-family-title: "Source Serif Pro", "Helvetica Neue", Helvetica, Arial,
+  sans-serif;
 $font-size: 16px;
 $font-height: 20px;
 //20px
@@ -10,10 +11,14 @@ $font-height: 20px;
 
 $color-foreground: #202020;
 $color-background: #ffffff;
-$color-link: #2020e0;
+$color-heading: #007dbb;
+//$color-link: #2020e0;
+$color-link: #e201a5;
+$color-link-hover: #74ae00;
 $accent: #2954ff;
 $accent-focus: #436eff;
 $accent-hover: #103be6;
+$color-text-default: #666;
 $text: #3e0fe7;
 $text-on-background: #9ac6d8;
 $grey-bar: #0f64e4;
