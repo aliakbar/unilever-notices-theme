@@ -11,7 +11,18 @@
     "browser-sync": "browser-sync start --proxy 'localhost:7000' --files 'dist'",
     "proxy": "aem-site-theme-builder live",
     "watch": "watch \"npm run compile\" src",
-    "live": "npm-run-all -p watch proxy browser-sync"
+    "live": "npm-run-all -p watch proxy browser-sync",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylelint 'src/**/*.scss' --syntax scss --fix",
+    "precommit": "stylelint 'src/**/*.scss' --syntax=scss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": "stylelint --syntax=scss"
   },
   "devDependencies": {
     "@adobe/aem-site-theme-builder": "4.0.1",
@@ -25,6 +36,8 @@
     "dotenv": "^8.2.0",
     "dotenv-cli": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.11.0",
     "normalize.css": "8.0.1",
@@ -32,6 +45,9 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-scss": "^3.20.1",
     "terser-webpack-plugin": "^1.4.1",
     "ts-loader": "^5.3.3",
     "tsconfig-paths-webpack-plugin": "^3.2.0",

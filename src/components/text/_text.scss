@@ -1,11 +1,11 @@
 .cmp-text {
-  margin: 0.75rem 0 0 0;
-  color: $text;
-  font-weight: normal;
-  font-size: 1em;
-  & b {
-    font-weight: bold;
-  }
+  // margin: 0.75rem 0 0 0;
+  // color: $text;
+  // font-weight: normal;
+  // font-size: 1em;
+  // & b {
+  //   font-weight: bold;
+  // }
   // & p a {
   //   color: $accent;
   //   text-decoration: none;
@@ -37,6 +37,23 @@
   }
   & ul li::marker {
     content: "-  ";
+  }
+}
+
+.cmp-container-home {
+  .cmp-text { 
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid $color-heading;
+    box-shadow: 0 0 12px 0 $color-box-shadow;
+    border-radius: 20px;
+    font-size: 28px;
+    margin-bottom: 40px;
+    @media only screen and (min-width: 768px) {
+      margin-bottom: 0;
+      padding: 100px;
+    }
   }
 }
 .cmp-text__paragraph {

@@ -6,8 +6,11 @@
 }
 .cmp-title__text {
   margin-top: 0;
-  font-size: 28px;
+  font-size: 24px;
   color: $color-heading;
+  @media only screen and (min-width: 768px) {
+    font-size: 28px;
+  }
 }
 .cmp-title__link {
   color: $accent;
