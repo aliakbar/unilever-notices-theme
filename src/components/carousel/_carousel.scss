@@ -4,8 +4,8 @@
 .cmp-carousel__content {
   position: relative;
 }
-.cmp-carousel__item {
-}
+// .cmp-carousel__item {
+// }
 .cmp-carousel__actions {
   position: absolute;
   right: 0.5em;
@@ -41,8 +41,8 @@
     outline: none;
   }
 }
-.cmp-carousel__action--disabled {
-}
+// .cmp-carousel__action--disabled {
+// }
 .cmp-carousel__action--previous {
   & .cmp-carousel__action-icon {
     &:before {
@@ -63,8 +63,8 @@
 .cmp-carousel__action--play {
   display: none;
 }
-.cmp-carousel__action-icon {
-}
+// .cmp-carousel__action-icon {
+// }
 .cmp-carousel__action-text {
   display: none;
 }
