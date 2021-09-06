@@ -18,11 +18,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint:scss"
     }
   },
   "lint-staged": {
-    "*.scss": "stylelint --syntax scss"
+    "src/**/*.scss": "stylelint --syntax scss"
   },
   "devDependencies": {
     "@adobe/aem-site-theme-builder": "4.0.1",
